@@ -10,7 +10,6 @@ public class MortgageCalculator {
         this.period = period;
     }
     public void paymentSchedule() {
-
         double monthly = getMonthly();
         int numberOfPayments = getNumberOfPayments();
         for (int i = 1; i <= period * 12; i++) {
@@ -35,8 +34,6 @@ public class MortgageCalculator {
     private double getMonthly() {
         return annual / MONTHS_IN_YEAR / PERCENT;
     }
-
-
 
     public int getPeriod() {
         return period;
